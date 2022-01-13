@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Fotografía
 eleventyNavigation:
   key: fotografia
-  title: Fotografía
+  title: Imágenes
   order: 2
 ---
 
@@ -12,6 +12,11 @@ eleventyNavigation:
   <p>
     La página de fotos.
   </p>
-  <img src="https://i.blogs.es/a19bfc/testing/1024_2000.jpg" alt="">
-  <img src="https://drive.google.com/file/d/17nmeRuPRpqTYlNat4qJI2iQ5_ORmWnnd/view?usp=sharing" alt="">
+
+  {% for elemento in fotos %}
+    <img src="/assets/images/{{elemento.imagen}}" alt="">
+  {% endfor %}
+
+  <img src="https://lh3.googleusercontent.com/k7dX9wOo-kFy6ygHGQYFU9O97TkPxxAzvrn0-pHEJpWk2e-WyKsglCAtDS_4FQnvdYwOYcNpZWuGj9-aEubVOeVA9f1C1FoqxuXShhAzc4bsYnAzVQvboIGhV7PoIjcC7eZQ6CREmdtNHQ6Q7RjOtvUTh3-y-JJMprqygvLh9Opvk7YQCpT6cInk_Z05Lsi7-kqOAQn9m0_e6-dZ_pPbgXU-MDduTCQ7QKalImVIE86OK2HwT2AZ7ZtKQB8DVtY1OZssoj9qJEozUd7LoTaIk6Id4No2vWC135snTucRcwRWz_eM-JKthPQU59a2xaDFtcqslBM4_kB7ZimW6aj39d0vKRzpdzGMIvMZz4k3bcOL6Af9fUXRqlbl2uH7weevQH-PhqegDAr-5Tus6SpTOjaVFfHfXXRIEtgWDiJcFBM06IQ6iYqgCIIACegbIbZEwj8CHOqT5C0Wv4xHyW7NkKvaAEZ00f8cWMaV_GR0iTSv1zanTj3YoB5duiIHzq0UGxX3Vp8jcfkWoIXMzhw7IDDA0oNtY6OPco7kXy8uUBZVdzzUg1MbzOuJaJ1tc2afY02jEW3YWRpYbER7P8ECz57yRqdEntCy9BQl_--STSzy6GyeTesG9qLz6kAAj7adI5KqZ1EQ5YpKAOJaZ2SmSf9Jj3LrUzv3vtn0F0JNeRpdn7hNRSD0TytIp2rlAILMPteZRqXIVjxLR3ohmwDcFotb=w493-h657-no?authuser=1" alt="">
+  
 </div>
